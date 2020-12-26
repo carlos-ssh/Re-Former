@@ -6,15 +6,18 @@
   <% end %>
   <div>
     <%= f.label :username, "Username:" %>
-    <%= f.text_field :username, placeholder: "Username:" %>
+    <br>
+    <%= f.text_field :username, placeholder: "Juan Palma" %>
     <br>
     <%= f.label :email, "Email:" %>
+    <br>
     <%= f.email_field :email, placeholder: "juan@example.com " %>
     <br>
     <%= f.label :password, "Password:" %>
-    <%= f.password_field :password, placeholder: "Petarda$" %>
     <br>
-    
+    <%= f.password_field :password, placeholder: "12345" %>
+    <br>
+    <br>
     <%= f.submit %>
   </div>
 <% end %>
