@@ -1,30 +1,72 @@
-# README
+# Project: Bare Metal Forms and Helpers
 
-This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com
+>In this project, you’ll build a form the old fashioned way and then the Rails way.
+
+## Built With
+
+- Ruby on Rails
+- Active Record
+- </3 Love
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps:
+
+- Clone this repository into your local machine.
+- Run:
+
+```bash
+  $ gem install bundler
+```
+
+- Run:
+
+```bash
+  $ bundle install
+```
+
+- Run
+
+```bash
+  $ rails db:migrate
+```
+
+- Access the New User creation view by typing this in your command line:
+
+```bash
+  $ rails server
+```
+
+- Enter in your web browser address bar:
+
+    localhost:3000
+
+- Play with the app!
+
+### Validators
+
+- Rubocop
+- Stickler
+
+## Authors
+
+👤 **Carlos SSH**
+
+- Github: [@Carlos-SSH](https://github.com/carlos-ssh)
+- Linkedin: [@Carlos-SSH](https://www.linkedin.com/in/carlos-ssh/)
 
 
-This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/carlos-ssh/re-former/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 📝 License
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is [MIT](lic.url) licensed.
