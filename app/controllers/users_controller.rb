@@ -3,21 +3,12 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def index
-    @users = User.all
-  end
-
   def create
     @user = User.new(user_params)
-
     if @user.save
-      redirect_to users_path
-      flash[:notice] = 'Signed Up Succesfully!'
-      flash[:color] = 'valid'
+      redirect_to :root
     else
       render :new
-      flash[:notice] = 'Form is Invalid :('
-      flash[:color] = 'invalid'
     end
   end
 
@@ -28,15 +19,19 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      redirect_to users_path
+      redirect_to :root
     else
-      render 'edit'
+      render :edit
     end
+  end
+
+  def index
+    @users = User.all
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:username, :email, :password)
+    p params.require(:user).permit(:username, :email, :password)
   end
 end
