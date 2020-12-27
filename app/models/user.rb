@@ -1,5 +1,3 @@
-# rubocop:enable Metrics/LineLength
-
 class User < ApplicationRecord
   attr_accessor :user
 
