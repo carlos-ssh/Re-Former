@@ -12,12 +12,12 @@ class UsersController < ApplicationController
 
     if @user.save
       redirect_to users_path
-      flash[:notice] = "Signed Up Succesfully!"
-      flash[:color] = "valid"
+      flash[:notice] = 'Signed Up Succesfully!'
+      flash[:color] = 'valid'
     else
       render :new
-      flash[:notice] = "Form is Invalid :("
-      flash[:color] = "invalid"
+      flash[:notice] = 'Form is Invalid :('
+      flash[:color] = 'invalid'
     end
   end
 
